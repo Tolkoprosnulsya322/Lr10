@@ -1,0 +1,88 @@
+/* Основний стиль для тіла сторінки */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Контейнер для гри */
+#game-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Заголовок */
+header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#greeting {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Графічні елементи слотів */
+.slots-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Стиль для рядів */
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Стиль для кожного слота */
+.slot {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Кнопка обертання */
+#spin-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#spin-button:hover {
+    background-color: #45a049;
+}
+
+/* Повідомлення про виграш */
+.instructions {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #666;
+}
